@@ -1,0 +1,1180 @@
+*{margin:0 auto;
+box-sizing: border-box;}
+
+h1, h2,h3,h4,li,strong, a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: normal;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 48px;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	margin-top: 20px;
+	font-weight: 400;
+}
+
+h3{
+	letter-spacing: 1px;
+}
+h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    color: #aaaaaa;
+    font-weight: 500;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: 17px;
+    color: #666;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+}
+ul {
+    padding-left: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/*******************************Sticky-header******************************/
+.sticky {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 999999999;
+    background: #000;
+    top: 0;
+    padding-bottom: 25px;
+}
+
+/**********************************fonts***************************************************/
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('./fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('./fonts/RobotoCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('./fonts/RobotoCondensed-Light.woff2') format('woff2'),
+    url('./fonts/RobotoCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('./fonts/Roboto-Black.woff2') format('woff2'),
+        url('./fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('./fonts/Roboto-Bold.woff2') format('woff2'),
+        url('./fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('./fonts/Roboto-Light.woff2') format('woff2'),
+        url('./fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*******************************************fonts*********************************************/
+
+/**8***********************************announcement-bar*****************************************/
+.mini-announcement-bar {
+    background-color: ffc104;
+}
+.container {
+	width: 1200px;
+}
+.announcement-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 0px;
+}
+
+.announcement-bar ul li {
+	display: inline;
+	padding: 0px 6px;
+}
+.announcement-bar ul li a {
+	color: black;
+	text-decoration: none;
+}
+.announcement-bar ul {
+	padding-left: 0;
+}
+.button-links a {
+	font-weight: 600;
+}
+.announcement-bar .Social-icons {
+	float: left;
+	width: 50%;
+}
+.announcement-bar .button-links {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+/********************************************navigation***********************************/
+
+.nav-wrapper {
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+}
+.site-logo img {
+	max-height: 70px;
+}
+.nav-wrapper a {
+	color: #fff;
+	text-decoration: none;
+}
+.nav-wrapper ul li {
+	display: inline;
+	padding: 0px 8px;
+}
+.main-menu a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    transition: 1.5s ease all;
+}
+.main-menu a:hover {
+    opacity: 1;
+}
+
+.home-banner {
+    background: url(../images/home-banner.jpg);
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+nav.navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+ 
+}
+
+.home-content {
+	color: #fff;
+	letter-spacing: 10px;
+	line-height: 10px;
+	text-decoration: none;
+	font-family: roboto;
+}
+
+.home-content p {
+	padding: 60px 0px 45px;
+}
+button a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.home-content button {
+	border: 0px;
+	padding: 10px 28px;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: red;
+}
+.home-content p {
+    color: #fff;
+}
+.chat-icon img {
+	height: 70px;
+	position: fixed;
+	left: 25px;
+	bottom: 55px;
+}
+/*****************************************body start*******************************/
+
+
+.section-text p {
+	padding: 46px 0px;
+}
+.section-text {
+    padding-top: 6%;
+}
+span {
+    font-weight: bold;
+}
+
+.section-heading {
+	text-align: center;
+	padding: 12px 0px;
+}
+.section-heading h3 {
+    font-size: 29px;
+}
+.section-heading button {
+	background-color: fabb00;
+	border: 0px;
+	padding: 18px 25px;
+	border-radius: 3px;
+	margin: 25px 0px;
+}
+.section-heading a {
+	color: #000;
+	letter-spacing: 2px;
+}
+/**parent-div start**/
+
+.parent-div {
+	padding: 90px 0px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.column-wrapper img {
+    max-width: 40px;
+}
+.column-wrapper h3 {
+	font-size: 16px;
+	font-family: roboto;
+	font-weight: normal;
+	color: #666666;
+	letter-spacing: 1;
+	padding: 18px 0px;
+}
+.column-wrapper p {
+    letter-spacing: .3;
+    line-height: 1.9;
+}
+.Asd-demand {
+	padding: 0px 51px;
+}
+/*********************************************banner-2*****************************/
+.main-banner {
+	display: flex;
+	align-items: center;
+}
+.main-banner {
+    background: url(../images/banner-2.jpg);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.banner-text {
+	display: flex;
+	color: #fff;
+	align-items: center;
+}
+.banner-text p {
+    color: #fff;
+}
+
+
+
+.Start-trial h3 {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 1;
+}
+.Start-trial button {
+	padding: 20px 80px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #000;
+	border: 0px;
+	letter-spacing: 2;
+	font-weight: normal;
+	border-radius: 3px;
+	font-family: roboto;
+}
+.main-banner::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.banner-text .Take-the-now, .Start-trial {
+	z-index: 0;
+}
+.Take-the-now h3 {
+    font-size: 33px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+/**************************************get ready*******************************************/
+.Get-ready {
+	padding: 70px 0px 0px;
+}
+.Get-ready p {
+    padding: 3% 0% 5%;
+}
+
+.card .image-box {
+    float: left;
+    width: 30.8%;
+    margin: 0 15px 0;
+}
+.image-box img {
+    width: 100%;
+    position: relative;
+}
+.image-box {
+    position: relative;
+}
+.image-box h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+}
+.image-box h3 {
+    padding-bottom: 35px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.image-box h2:hover {
+    opacity: 1;
+    transition: 0.3s ease all;
+}
+
+.running-in-person-classes {
+	text-align: center;
+	padding: 100px 0px;
+}
+
+.running-in-person-classes button {
+	background-color: fabb00;
+	border: 0px;
+	padding: 18px 25px;
+	border-radius: 3px;
+	margin: 25px 0px;
+}
+.running-in-person-classes a {
+	color: #000;
+	letter-spacing: 2px;
+}
+.running-in-person-classes p {
+    padding: 22px 0px;
+}
+section, footer {
+    float: left;
+    width: 100%;
+}
+/***************************************footer start**********************************************/
+
+.footer-section h5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: roboto;
+    letter-spacing: 1;
+    border-bottom: 1px dotted #c2c2c2;
+    padding-bottom: 12px;
+}
+
+
+
+
+
+.follow-us li {
+    display: inline;
+    padding: 0px 6px;
+    font-size: 26px;
+}
+.Follow-Us ul {
+    padding: 0px;
+}
+.newsletter input, .newsletter button {
+    width: 100%;
+    height: 53px;
+    border-radius: 5px;
+}
+footer {
+    background: #000;
+    color: #fff;
+    padding: 5% 0% 2%;
+}
+.footer-section .footer-col {
+    float: left;
+    width: 25%;
+}
+.footer-section .footer-col {
+    float: left;
+    width: 25%;
+    padding: 0px 20px 0px;
+}
+
+.newsletter input {
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+.newsletter button {
+    background: #CFA82F;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    FONT-WEIGHT: 600;
+}
+.footer-section h6:hover {
+    color: #fff;
+}
+.newsletter span {
+    color: red;
+}
+.Follow-Us ul {
+    margin-top: 14px;
+    padding-bottom: 70px;
+}
+.footer-contact p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.footer-section {
+    float: left;
+    width: 100%;
+}
+.copyright-text p {
+    font-size: 18px;
+}
+.copyright-text {
+    display: inline-block;
+    margin-top: 6%;
+    border-top: 1px solid #202020;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+}
+.footer-contact h5 {
+    margin-bottom: 25px;
+}
+.footer-contact a {
+    line-height: 35px;
+    color: #aaa;
+}
+footer p {
+    color: #fff;
+}
+
+
+/*********************************************online-trial page************************************/
+.Online-trial-nav {
+    background-color: #000 ;
+}
+.Online-trial {
+    padding-top: 20px;
+}
+.Online-trial-nav {
+    position: unset !important;
+    padding-bottom: 25px;
+}
+.Cross-Training h1 {
+    color: #666;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 25px;
+}
+.Cross-Training {
+    padding: 70px 70px;
+}
+.Cross-Training p {
+    padding-top: 15px;
+}
+.Online-trial .boxes {
+    float: left;
+    width: 30.3%;
+    margin: 0px 18px;
+}
+.boxes img, .bg-image img {
+    width: 100%;
+}
+.boxes {
+    position: relative;
+}
+.boxes h2 {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    background: rgba(0,0,0,0.3);
+    height: 242px;
+    align-items: center;
+}
+.boxes p {
+    margin-top: 25px;
+    margin-bottom: 65px;
+}
+
+
+/***********************************pricing table**********************************/
+.pricing-table {
+    text-align: center;
+    padding: 50px 5% 50px;
+    float: left;
+    width: 100%;
+}
+.Online-membership .pricing-table-title {
+    height: 65px;
+    padding: 15px 0px;
+    color: #fff;
+    background: #222222;
+}
+
+.Online-membership .pricing {
+    height: 200px;
+    background: #2B2B2B;
+    padding-top: 10px;
+}
+.Online-membership {
+    float: left;
+    width: 48.1%;
+    margin: 0px 10px;
+}
+.Online-membership  h1 {
+    font-size: 77px;
+    font-weight: 351;
+}
+.Online-membership h2 {
+    font-size: 26px;
+}
+.Online-membership p {
+    font-size: 14px;
+    color: #fff;
+}
+.Online-membership .feature-text {
+    padding: 20px;
+    list-style: none;
+    line-height: 35px;
+    font-size: 15px;
+}
+.Online-membership .feature-text li {
+    border-bottom: 1px dotted;
+    border-color: d3d3d3;
+	font-family: roboto;
+}
+.Online-membership button {
+    background-color: #ED493C;
+    border: 0px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 20px 0px;
+}
+.feature-text li:last-child {
+    border: none;
+}
+
+/***********************************live-classes*********************************/
+.live-classes {
+    padding: 60px 0px;
+    margin-bottom: 40px;
+}
+.live-classes h2 {
+    color: #666;
+    padding-bottom: 22px;
+}
+.Affilate-logo li {
+    float: left;
+    width: 16.66%;
+    list-style: none;
+    text-align: center;
+}
+
+.Affilate-logo li img {
+    width: 160px;
+}
+.Affilate-logo {
+    padding: 20px 0px;
+}
+
+/**********************************client-review***********************************/
+.client-review {
+    margin: 15px 0px;
+    float: left;
+    width: 100%;
+    background-color: #334363;
+    color: #fff;
+    padding: 60px 25px 70px;
+}
+.client-review h2 {
+    padding-bottom: 50px;
+    color: #fff;
+}
+h4 {
+    color: #fff;
+}
+.client-review p {
+    color: #fff;
+    font-size: 16px;
+}
+.wrapper-content .wrap {
+    float: left;
+    width: 33.33%;
+    font-style: italic;
+    padding: 0px 16px;
+}
+
+
+.ASD-member {
+    display: flex;
+    padding-top: 70px;
+}
+.ASD-member img {
+    border-radius: 100%;
+    width: 80px;
+    margin-left: 0px;
+}
+.group {
+    text-align: left;
+    font-style: normal;
+    padding-top: 20px;
+    margin-left: 0;
+}
+
+/***************************************position-image*******************************************/
+.position-image {
+    float: left;
+    width: 100%;
+}
+.image-with-text img {
+    width: 760px;
+}
+.image-with-text {
+    padding: 15% 0%;
+    position: relative;
+    text-align: center;
+}
+.after-text p {
+    width: 600;
+    height: 150;
+    text-align: center;
+    padding: 30px 40px;
+    background-color: #A9BCDA;
+    color: #111;
+    font-weight: 400;
+}
+.before-text {
+    height: 280px;
+    width: 320px;
+    background-color: #42495B;
+    text-align: center;
+    padding: 33px 0px;
+}
+.before-text h6 {
+    color: #fff;
+}
+.before-text h4 {
+    color: #fff;
+}
+.before-text p {
+    color: #fff;
+    font-weight: 900;
+    padding: 18px 18px;
+}
+.image-with-text .after-text p {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    text-align: center;
+}
+.image-with-text .before-text {
+    position: absolute;
+    top: 54%;
+    bottom: 0px;
+    right: 30px;
+    height: 280px;
+    width: 320px;
+    background-color: #42495B;
+    text-align: center;
+    padding: 33px 0px;
+}
+
+/****************************************Interactive-trainimg***********************************************/
+
+.Interactive-training {
+    background-color: #222222;
+    color: #fff;
+    padding: 36px 20%;
+    margin-bottom: 100px;
+}
+.Interactive-training li {
+    line-height: 27px;
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.Interactive-training li:before {
+    position: absolute;
+    content: "\f058";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+}
+
+/******************************************Krav Mega programs page************************************/
+
+.Real-world-self-defence h2 {
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 4px;
+    font-size: 48px;
+    margin-bottom: 45px;
+}
+.Real-world-self-defence p {
+    line-height: 32px;
+   
+}
+.Real-world-self-defence {
+    padding: 78px 75px 64px;
+}
+/*************************************rules******************************************/
+.Rules-in-krav-mega .Rules {
+    float: left;
+    width: 46%;
+    padding-bottom: 70px;
+    margin: 0px 20px;
+}
+.Rules-in-krav-mega .Rules, .rules p, .Rules-bg-image h2 {
+	color: #fff;
+	position: relative;
+}
+
+.Rules strong {
+    font-size: 20px;
+    position: relative;
+    font-weight: 600;
+}
+.Rules-in-krav-mega p {
+    font-size: 14.44px;
+    padding-top: 20px;
+}
+.Rules-in-krav-mega h2 {
+    padding: 70px 0px;
+}
+.Rules strong:before {
+    position: absolute;
+    content: "\f058";
+    top: 0px;
+    bottom: 0px;
+    font-family: 'FontAwesome';
+    display: flex;
+    align-items: center;
+	font-size:27px;
+}
+.Rules span {
+	padding-left: 40px;
+	display: block;
+}
+.Rules-in-krav-mega {
+    float: left;
+    width: 100%;
+    margin-top: 80px;
+    padding: 0% 5%;
+}
+.Rules-bg-image {
+	background-image: url('../images/slide5.jpg');
+	background-position: center;
+	height: 83vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+}
+.Rules-bg-image::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.Rules-bg-image h2 {
+    padding-top: 70px;
+}
+/********************************************new-offer*************************************************/
+.heading-red h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #b82b35;
+   
+}
+.new-member-offer h3 {
+    font-weight: 700;
+    color: #666666;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    padding: 0px 0px 16px;
+}
+.new-member-offer p {
+    font-size: 20px;
+    line-height: 34px;
+    padding-right: 50px;
+}
+.new-offer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 75px;
+}
+.offer-text {
+    float: left;
+    width: 77%;
+}
+.new-offer button {
+    float: left;
+    width: 23%;
+    height: 59px;
+    background: #b82b35;
+    border: 0px;
+    border-radius: 5px;
+}
+.new-offer a {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.new-member-offer {
+    padding: 60px 80px;
+    padding-bottom: 0px;
+}
+.heading-red hr {
+    width: 228px;
+    height: 6px;
+    background: #b82b35;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/*********************************Gear-Requirement***************************/
+   .Gear-Reguirement p {
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    font-family: roboto;
+}
+.Gear-Reguirement {
+    padding-top: 90px;
+}
+.Requirement {
+    display: flex;
+    padding: 4% 30%;
+}
+.Requirement h4 {
+    text-align: center;
+    color: #666;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 18px;
+}
+/*********************************************krav-mega & rank system*************************/
+.Krav-Mega-Rank-System .new-member-offer {
+    padding-top: 4px;
+}
+
+.Krav-Mega-Rank-System {
+    padding: 65px 0px 100px;
+}
+.ZOOM-SCHEDULE p {
+	text-align:center;
+}
+.Time-Schedule {
+    display: flex;
+    padding: 50px 15px 160px;
+    font-family: roboto;
+}
+.Time-Schedule h5 {
+    font-size: 17px;
+    color: #666666;
+    line-height: 2.3;
+}
+.Time-Schedule p {
+    font-size: 14.4px;
+    font-family: roboto;
+}
+
+/***********************************************online-schedule************************************/
+.ONLINE-SCHEDULE p {
+    text-align: center;
+    line-height: 30px;
+}
+/************************************Krav-Mega-Instructors*********************************/
+.Instructors img {
+    width: 100%;
+    border-radius: 100%;
+}
+.Our-Instructors .Instructors {
+    float: left;
+    width: 21%;
+    margin: 0px 24px 55px;
+    text-align: center;
+}
+.Instructors h3 {
+    font-size: 24px;
+    color: #666666;
+    font-family: roboto;
+    padding: 20px 0px 10px;
+}
+
+/**********************************Instructors********************************************/
+
+.ASD-Instructors {
+    padding: 100px 0px 14px;
+}
+.Krav-Instructors .Instructors li {
+    padding-top: 8px;
+    list-style: none;
+    font-size: 12px;
+}
+.Krav-Instructors .Instructors i {
+    padding-right: 6px;
+}
+.Instructions p {
+    font-size: 19.36px;
+    font-family: roboto;
+    line-height: 1.7;
+    padding: 60px 66px 200px;
+}
+/*******************************************contact-us******************************************/
+/******************************************contact-bg-image***************************************/
+.contact-bg-image {
+    background-image: url(../images/contact-bg-image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background-position: center -306px;
+    background-repeat: no-repeat;
+}
+.contact-bg-image:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0,0,0,0.2);
+}
+.contact-us {
+    text-align: center;
+    padding: 95px 0px 83px;
+    color: #fff;
+}
+.contact-us h2 {
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.contact-us p {
+    font-style: italic;
+    color: #fff;
+    font-size: 15px;
+}
+/*********************************************************form*************************************/
+.contact-form input, textarea {
+    width: 100%;
+    border-color: cccccc;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.contact-form .contact-field-flex input {
+    float: left;
+    width: 49.2%;
+}
+.contact-form input {
+    height: 40px;
+}
+.contact-form textarea {
+    height: 90px;
+}
+.contact-form label {
+    color: #666666;
+}
+form button {
+    padding: 13px 40px;
+    background-color: 4c4c4c;
+    border-radius: 3px;
+    border: 0px;
+    display: flex;
+    color: #fff;
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 300;
+}
+.last-name {
+    margin-left: 17px;
+}
+.contact-form input, textarea:focus-visible {
+    outline: none;
+}
+.contact-form {
+    padding: 140px 0px 210px;
+    width: 50%;
+}
+/******************************contact-detail*********************/
+.contact-details h3 {
+    font-family: roboto;
+    font-size: 24px;
+    color: 666666;
+}
+.contact-details p a {
+    color: #0000ff;
+    font-size: 16px;
+    font-family: roboto;
+}
+.email {
+    padding: 35px 0px;
+}
+.contact-field-flex {
+    display: flex;
+}
+.Contact {
+    display: flex;
+    width: 100%;
+    padding: 0px 30px;
+}
+.contact-details {
+    padding: 30px 0px 0px;
+}
+
+/*********************************************Schedule-page********************************/
+.ASD-Schedule h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #666666;
+    padding-bottom: 15px;
+    letter-spacing: 0px;
+}
+.ASD-Schedule p {
+    font-size: 16px;
+    font-family: roboto;
+    text-align: center;
+}
+.ASD-Schedule {
+    padding: 70px 0px;
+}
+
+/**********************************************schedule************************************/
+.Santa-Clara-image img {
+    width: 100%;
+}
+.ASD-Classes {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.ASD-Classes .Santa-Clara-image, .ASD-Classes .Santa-Clara-Classes {
+    float: left;
+    width: 50%;
+}
+.Schedule {
+    padding: 0px 40px 90px;
+}
+.Santa-Clara-Classes button {
+    padding: 11px 25px;
+    background-color: #c60000;
+    border: 0px;
+    border-radius: 3px;
+}
+.Santa-Clara-Classes button a {
+    letter-spacing: .5;
+    font-family: roboto;
+    font-size: 16px;
+}
+.Santa-Clara-Classes {
+    text-align: center;
+    padding: 0px 40px;
+}
+.Santa-Clara-Classes p {
+    padding: 18px 0px;
+    font-family: roboto;
+    font-size: 16px;
+}
+.Santa-Clara-Classes h3 {
+    font-family: roboto;
+    font-size: 30px;
+    letter-spacing: 0px;
+}
